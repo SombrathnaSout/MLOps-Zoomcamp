@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/0/8b896b7f4e2d4e388b172e752d74c3d1/artifacts
+end_time: 1716280676309
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8b896b7f4e2d4e388b172e752d74c3d1
+run_name: delicate-gull-13
+run_uuid: 8b896b7f4e2d4e388b172e752d74c3d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716280658398
+status: 3
+tags: []
+user_id: codespace
