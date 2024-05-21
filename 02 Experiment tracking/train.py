@@ -3,7 +3,6 @@ import pickle
 import click
 import mlflow
 import mlflow.sklearn
-import pandas as pd
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
@@ -17,33 +16,24 @@ def load_pickle(filename: str):
 @click.command()
 @click.option(
     "--data_path",
-    default="output",
+    default="./output",
     help="Location where the processed NYC taxi trip data was saved"
 )
 @click.option(
     "--model_path",
-    default="model",
+    default="./model",
     help="Location where the trained model will be saved"
 )
 def run_train(data_path: str, model_path: str):
 
-    # Set the MLflow tracking URI
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
+    # Load the preprocessed training and validation data
+    X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
+    X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
 
-    # Enable MLflow autologging
+    # Initialize MLflow and enable autologging
     mlflow.sklearn.autolog()
 
     with mlflow.start_run():
-        # Load the preprocessed training and validation data
-        X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
-        X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
-
-        # Convert to pandas DataFrames for better MLflow compatibility
-        X_train = pd.DataFrame(X_train)
-        y_train = pd.Series(y_train)
-        X_val = pd.DataFrame(X_val)
-        y_val = pd.Series(y_val)
-
         # Initialize and train the RandomForestRegressor
         rf = RandomForestRegressor(max_depth=10, random_state=0)
         rf.fit(X_train, y_train)
