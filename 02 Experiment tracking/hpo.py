@@ -8,7 +8,7 @@ from hyperopt.pyll import scope
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
 mlflow.set_experiment("random-forest-hyperopt")
 
 
@@ -20,7 +20,7 @@ def load_pickle(filename: str):
 @click.command()
 @click.option(
     "--data_path",
-    default="./output",
+    default="output",
     help="Location where the processed NYC taxi trip data was saved"
 )
 @click.option(
@@ -33,14 +33,16 @@ def run_optimization(data_path: str, num_trials: int):
     X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
     X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
 
-    def objective(params):
+    def objective(params):    
+        with mlflow.start_run(nested=True):
+            rf = RandomForestRegressor(**params)
+            rf.fit(X_train, y_train)
+            y_pred = rf.predict(X_val)
+            rmse = mean_squared_error(y_val, y_pred, squared=False)
+            mlflow.log_params(params)
+            mlflow.log_metric('rmse',rmse)
 
-        rf = RandomForestRegressor(**params)
-        rf.fit(X_train, y_train)
-        y_pred = rf.predict(X_val)
-        rmse = mean_squared_error(y_val, y_pred, squared=False)
-
-        return {'loss': rmse, 'status': STATUS_OK}
+            return {'loss': rmse, 'status': STATUS_OK}
 
     search_space = {
         'max_depth': scope.int(hp.quniform('max_depth', 1, 20, 1)),

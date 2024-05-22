@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/9a5049be9681482b921e2dc665d9491e/artifacts
+end_time: 1716355662165
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 9a5049be9681482b921e2dc665d9491e
+run_name: grandiose-grub-474
+run_uuid: 9a5049be9681482b921e2dc665d9491e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355653715
+status: 3
+tags: []
+user_id: codespace

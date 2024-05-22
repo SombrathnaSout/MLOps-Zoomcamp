@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/5d7e60f994a645f0b18933cd82078626/artifacts
+end_time: 1716355687124
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 5d7e60f994a645f0b18933cd82078626
+run_name: carefree-sow-752
+run_uuid: 5d7e60f994a645f0b18933cd82078626
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355682305
+status: 3
+tags: []
+user_id: codespace

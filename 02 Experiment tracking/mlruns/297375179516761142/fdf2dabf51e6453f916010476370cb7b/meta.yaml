@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/fdf2dabf51e6453f916010476370cb7b/artifacts
+end_time: 1716355678430
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: fdf2dabf51e6453f916010476370cb7b
+run_name: bald-mink-586
+run_uuid: fdf2dabf51e6453f916010476370cb7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355675749
+status: 3
+tags: []
+user_id: codespace

@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/bb47f06ac6f148ccba62b29ebf9cb28c/artifacts
+end_time: 1716355663042
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: bb47f06ac6f148ccba62b29ebf9cb28c
+run_name: resilient-moose-117
+run_uuid: bb47f06ac6f148ccba62b29ebf9cb28c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355662169
+status: 3
+tags: []
+user_id: codespace

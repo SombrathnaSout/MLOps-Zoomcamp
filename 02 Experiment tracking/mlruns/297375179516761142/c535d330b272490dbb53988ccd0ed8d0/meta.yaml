@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/c535d330b272490dbb53988ccd0ed8d0/artifacts
+end_time: 1716355679318
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: c535d330b272490dbb53988ccd0ed8d0
+run_name: nervous-hound-147
+run_uuid: c535d330b272490dbb53988ccd0ed8d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355678436
+status: 3
+tags: []
+user_id: codespace

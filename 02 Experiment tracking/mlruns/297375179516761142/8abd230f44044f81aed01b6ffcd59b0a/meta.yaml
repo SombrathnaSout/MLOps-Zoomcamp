@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/8abd230f44044f81aed01b6ffcd59b0a/artifacts
+end_time: 1716355675744
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 8abd230f44044f81aed01b6ffcd59b0a
+run_name: receptive-fly-352
+run_uuid: 8abd230f44044f81aed01b6ffcd59b0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355672453
+status: 3
+tags: []
+user_id: codespace

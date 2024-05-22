@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/4989dc56a3d9439fa8c50043f22a66d9/artifacts
+end_time: 1716355637027
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 4989dc56a3d9439fa8c50043f22a66d9
+run_name: nebulous-flea-543
+run_uuid: 4989dc56a3d9439fa8c50043f22a66d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355636508
+status: 3
+tags: []
+user_id: codespace

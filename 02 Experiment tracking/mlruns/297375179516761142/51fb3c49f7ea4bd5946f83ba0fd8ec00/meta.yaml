@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/51fb3c49f7ea4bd5946f83ba0fd8ec00/artifacts
+end_time: 1716355645190
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 51fb3c49f7ea4bd5946f83ba0fd8ec00
+run_name: salty-cub-504
+run_uuid: 51fb3c49f7ea4bd5946f83ba0fd8ec00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355642619
+status: 3
+tags: []
+user_id: codespace

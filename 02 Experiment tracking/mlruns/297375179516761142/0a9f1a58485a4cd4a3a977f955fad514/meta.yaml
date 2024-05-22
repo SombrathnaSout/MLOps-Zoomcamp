@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/MLOps-Zoomcamp/02%20Experiment%20tracking/mlruns/297375179516761142/0a9f1a58485a4cd4a3a977f955fad514/artifacts
+end_time: 1716355682300
+entry_point_name: ''
+experiment_id: '297375179516761142'
+lifecycle_stage: active
+run_id: 0a9f1a58485a4cd4a3a977f955fad514
+run_name: caring-seal-419
+run_uuid: 0a9f1a58485a4cd4a3a977f955fad514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716355679322
+status: 3
+tags: []
+user_id: codespace
