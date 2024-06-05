@@ -1,6 +1,0 @@
-projects:
-  unit_0_setup: {}
-  unit_1_data_preperation:
-    path: unit_1_data_preperation
-  unit_2_training: {}
-  unit_3_observability: {}
