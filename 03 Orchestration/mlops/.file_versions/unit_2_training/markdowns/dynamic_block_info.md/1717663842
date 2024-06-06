@@ -1,0 +1,4 @@
+# Dynamic block
+A dynamic block will create a downstream blocks at runtime.
+
+The number of blocks 

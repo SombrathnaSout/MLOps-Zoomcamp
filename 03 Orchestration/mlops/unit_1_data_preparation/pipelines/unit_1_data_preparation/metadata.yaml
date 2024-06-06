@@ -1,0 +1,85 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/data_loaders/data_loader.py
+  downstream_blocks:
+  - transform
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Data Loader
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: data_loader
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/transformers/transform.py
+  downstream_blocks:
+  - data_exporter
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Transform
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - data_loader
+  uuid: transform
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: unit_1_data_preparation/data_exporters/data_exporter.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: data_exporter
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform
+  uuid: data_exporter
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-06 03:21:07.902994+00:00'
+data_integration: null
+description: Prepare data for training, from cleaning, feature selection to vectorize
+  feature
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: unit_1_data_preparation
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: unit_1_data_preparation
+variables:
+  split_on_feature: lpep_pickup_datetime
+  split_on_feature_value: '2024-02-01'
+  target: duration
+variables_dir: /home/codespace/.mage_data/unit_1_data_preparation
+widgets: []
